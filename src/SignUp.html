@@ -14,23 +14,95 @@
         html,body{
           height: 100%;
           width: 100%;
+          font-size: Inter;
         }
-        .right-image{
-          height: fit-content;
-          float : right;
+        .flexbox{
+          display: flex;
+          flex-direction: row;
         }
-        img{
-          width:auto;
-          height: 770px;
+        #logo img{
+          width:236px;
+          height: 103px;
+        }
+        #left-side{
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+          width: 800px;
+          position: relative;
+          left: 40px;
+        }
+        h1{
+          width:fit-content; 
+          margin-top: 30px;
+          height: 130px;
+          font-size: 80px;
+          font-family: Inter;
+          font-weight: 400;
+          color: #2B43C4;
+        }
+        .input-field{
+          width: 580px;
+          height: 55px;
+          border: 2px solid black;
+          margin-bottom: 40px;
+        }
+        .input-field label{
+          display: block;
+          font-weight:400;
+          font-size: 20px;
+          margin-bottom: 5px;
+          position: relative;
+          left: 10px;
+        }
+        input{
+          border: none;
+          position: relative;
+          left: 10px;  
+          margin-bottom: 5px;
+        }
+        button{
+          margin-top: 10px;
+          margin-bottom: 40px;
+          padding: 10px;
+          position: relative;
+          left: 24px;
+          width: 527px;
+          height: 62px;
+          background-color: transparent;
+          font-size: 35px;
+          color: #2B43C4;
+          border-radius: 14px;
+          border: 2px solid #2B43C4;
+          box-shadow: 1px 1px black;
         }
   </style>
 <body>
-    <div>
-      <div>
-
-      </div>
-      <div class="right-image">
-        <img src="/image 3.png" alt="saul goodman">
+    <div class="flexbox">
+      <div id="left-side">
+        <div id="logo">
+          <img src="/IEEE.png" alt="IEEE logo">
+        </div>
+        <div class="heading1">
+          <h1>Make your account!</h1>
+        </div>
+        <div class="input-field">
+          <label for="name">Name</label>
+          <input type="text" placeholder="IEEE-VIT">
+        </div>
+        <div  class="input-field">
+          <label for="name">Email</label>
+          <input type="text" placeholder="ieee@vit.ac.in">
+        </div>
+        <div  class="input-field"> 
+          <label for="pass">Password</label>
+          <input type="password" placeholder="*************"> 
+        </div>
+        <div  class="input-field">
+          <label for="confrim password">Confirm Password</label>
+          <input type="password" placeholder="*************"> 
+        </div>  
+        <button>Create Account!</button>
       </div>
     </div>
   
