@@ -9,7 +9,7 @@ We'll be looking at meaningfull contributions from everyone to begin their journ
 We will be making out a new Music Player Application's frontend, E-Commerce Website and also Recipe Website.
 This will mostly comprise of a dummy frontend as it will be for learning purposes.
 
-You can check out the website [here](https://ieeevit.org/).
+You can check out the website [here](https://sourcesprint.ieeevit.org/).
 
 ## Tools and Technologies To Be Used
 * ReactJS
