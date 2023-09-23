@@ -32,9 +32,6 @@ To get started:
 
 To start contributing, check out [`CONTRIBUTING.md`](https://github.com/IEEE-VIT/CTF-Backend/tree/master/CONTRIBUTING.md) . New contributors are always welcome as that is the purpose of this repo.
 
-## Resources
-We will soon populate this section.
-
 ## Contributors ✨
 
 Thanks goes to these wonderful people:
