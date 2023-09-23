@@ -1,4 +1,4 @@
-# REST_API
+# Front-end repository
 Welcome to Source Sprint's front-end repository!
 
 ## About
