@@ -10,6 +10,11 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script>$(document).ready(function () {
+    $('.navbar-collapse a').click(function() {
+        $('.navbar-collapse').collapse('hide');
+    });
+});</script>
     <title>Login</title>
 </head>
   <style>
@@ -36,13 +41,6 @@
       width: 100%;
       margin-left: -2rem;
       margin-right: -2rem;
-      /*justify-content: space-between;
-      align-items: center;
-      position: fixed;
-      width: 100%;
-      
-      top: 0;
-      z-index: 998;*/
       .logo{
           font-family:lato;
           margin-left: 3rem;
@@ -54,42 +52,6 @@
               color:var(--text-color)
           }
       }
-      .nav-links a{
-        font-family:lato;    
-        /*margin-right: 2rem;*/
-        font-family:lato;    
-              margin-left: 2rem;
-              color: var(--text-light);
-              letter-spacing: 2px;
-              text-transform: uppercase;
-              position: relative;
-              justify-content: space-between;
-              font-size: 0.9em;
-              &::before{
-                  content: '';
-                  display: inline-block;
-                  height: 3px;
-                  width:100%;
-                  background-color: var(--primary-color);
-                  position: absolute;
-                  bottom: -5px;
-                  left: 0;
-                  transform: scaleX(0);
-                  transition: getAnimationDuration(0.2s) ease-in-out;
-                  }   
-                  &:hover{
-                      &::before{
-                          transform: scaleX(1);
-                      }
-                  }
-                  &:active{
-                      color: var(--primary-color);
-                      font-weight: bold;  
-      }
-      .nav-links shopping-bag{
-        outline:none;
-}
-}
     #navbarNav{
       margin-left: 20%;
     }
@@ -103,7 +65,15 @@
       position: relative;
       font-size: 0.9em;
 
-}}
+}
+.navbar-collapse {
+  margin-top: 1rem;
+  background-color: #fbfbfb; 
+  border-radius: 1rem;
+} 
+
+}
+
  
   </style>
 <body>
@@ -111,7 +81,8 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       
       <a class="logo">IEEE JEWELLERY STORE</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="true" aria-label="Toggle navigation">
+        <!-- <a class="navbar-toggler" data-toggle="collapse" data-target="navbarNav"  href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a> -->
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
